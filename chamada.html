@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>CHAMEI</title>
+  <link rel="shortcut icon" href="/images/CHAMEI v3.svg" type="image/x-icon">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="/css/chat.css">
+</head>
+
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text"></h1>
+      <div class="col s12 m8 offset-m2 l6 offset-l3 center">
+        <img class="responsive-img" src="/images/CHAMEI v3.svg" alt="" style="max-width: 200px;">
+      </div>
+      <div class="row center">
+        <p class="header col s12 light"><strong>MEI</strong>, divulgue seu serviço! <br><strong>Cidadão</strong>, encontre de forma fácil seu prestador!</p>
+        <p class="header col s12 light"></p>
+      </div>
+
+      <div class="container">
+        <div class="row msg-container">
+
+          <div class="col m12 col s12">
+            <div class="box-blue">
+              <img class="pull-right" ng-src="{{message.imageUrl}}" />
+              <p>Boa tarde seu Fulano de tal!</p>
+              <div>
+                <strong>Cliente</strong>&nbsp;
+                <span class="date">14:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col m12 col s12">
+            <div class="box-gray">
+              <img class=" pull-left" ng-src="{{message.imageUrl}}" />
+              <p>Olá, boa tarde cliente! No que posso ajudar?</p>
+              <div>
+                <strong>Prestador</strong>&nbsp;
+                <span class="date">14:01</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col m12 col s12">
+            <div class="box-blue">
+              <img class="pull-right" ng-src="{{message.imageUrl}}" />
+              <p>Preciso que requadre uma porta, quanto custa?</p>
+              <div>
+                <strong>Cliente</strong>&nbsp;
+                <span class="date">14:02</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col m12 col s12">
+            <div class="box-gray">
+              <img class=" pull-left" ng-src="{{message.imageUrl}}" />
+              <p>O serviço fica em 100 reais</p>
+              <div>
+                <strong>Prestador</strong>&nbsp;
+                <span class="date">14:02</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row">
+          <form style="display:inherit">
+            <div class="col m12 s12">
+              <input type="text" placeholder="Escribe un mensaje" />
+            </div>
+            <br><br>
+            <div class="row right">
+              <span class="input-group-btn">
+                <label class="btn btn-sm chat-submit-button">
+                  <i class="material-icons">attachment</i>
+                  <input type="file" class="file_input" />
+                </label>
+              </span>
+
+              <button type="submit" class="btn chat-submit-button"><i class="material-icons">send</i></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div id="scheduleMessage" class="display-none card">
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>Consulta marcada com sucesso</p>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <a id="scheduleMeeting" class="btn-large waves-effect waves-light">Agendar visita</a>
+      </div>
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+      <script src="js/agendarVisita.js"></script>
+</body>
+</html>

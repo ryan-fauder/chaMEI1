@@ -1,0 +1,19 @@
+body {
+	 background: #0f1923;
+	 font-family: "Muli";
+}
+ div a {
+	 width: 100%;
+	 max-width: 240px;
+	 height: 54px;
+	 padding: 8px;
+	 font-size: 0.8rem;
+	 font-weight: 900;
+	 color: #ff4655;
+	 text-align: center;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 box-shadow: 0 0 0 1px inset rgba(236, 232, 225, 0.3);
+	 position: relative;
+	 margin: 10px 0;
+}

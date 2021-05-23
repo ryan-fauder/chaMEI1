@@ -44,43 +44,32 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-<br>
+
   <div class="container">
     <div class="bread">
-      <strong>Prestador</strong>
+    <a href="/prestador/">Prestador</a> > <a href="/prestador/chamadaPrestador.html">Chamada - #id-202108 - Maria</a> > <strong>Agendamento</strong>
     </div>
   <div class="row">
-    <h5 class="center text-lighten-2">Chamadas</h5>
-
-
-  <ul class="collection">
-      
-      <li class="collection-item avatar ">
-          <i class="material-icons circle">account_circle</i>
-          <strong>#id-202108</strong><br>
-          <a href="/prestador/chamadaPrestador.html"><span class="title">Maria</span></a>
-          <span class="new badge green" data-badge-caption="Nova chamada"></span>
-          <br><span>22/05/2021 - 10:00</span>
-      </li>
-      <li class="collection-item avatar ">
-          <i class="material-icons circle">account_circle</i>
-          <strong>#id-202100</strong><br>
-          <a href="/prestador/chamadaPrestador.html"><span class="title">João</span></a>
-          <span class="new badge blue" data-badge-caption="Em atendimento"></span>
-          <br><span>22/05/2021 - 15:00</span>
-      </li>
-      <li class="collection-item avatar ">
-          <i class="material-icons circle">account_circle</i>
-          <strong>#id-202106</strong><br>
-          <a href="/prestador/chamadaPrestador.html"><span class="title">Ancelmo</span></a>
-          <span class="new badge grey" data-badge-caption="Encerrada"></span>
-          <br><span>18/04/2021 - 15:00</span>
-      </li>
-      
-    </ul>
-  </div>
+    <h5 class="center text-lighten-2">Agende a visita para chamada #id-202108</h5>
   </div>
 
+   <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="date" class="validate">
+          <label for="first_name">Data</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="time" class="validate">
+          <label for="last_name">Hora</label>
+        </div>
+      </div>
+      <div class="row center">
+          <a href="/prestador/agendaPrestador.html" class="btn-large waves-effect waves-light">Agendar</a>
+    </form>
+  </div>
+</div>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="/js/materialize.js"></script>

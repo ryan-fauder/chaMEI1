@@ -11,20 +11,23 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="icon" type="image/png" href="../images/icons/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../fonts/iconic/css/material-design-iconic-font.min.css">
 </head>
 
-<body>
+<body class="max-height-100">
 	<nav class="teal darken-2" role="navigation">
 		<div class="nav-wrapper container">
 			<a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="/images/CHAMEI v3.svg" alt=""
           style="max-width: 100px;"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Perfil</a></li>
-        <li><a href="#">Chamadas</a></li>
-        <li><a href="#">Agenda</a></li>
-        <li><a href=".">Orçamentos</a></li>
-        <li><a href="#">Ordem de serviço</a></li>
-        <li><a href="educacao.html">Espaço Educação MEI</a></li>        
+        <li><a href="/prestador/perfil.html">Perfil</a></li>
+        <li><a href="/prestador/index.html">Chamadas</a></li>
+        <li><a href="/prestador/agendaPrestador.html">Agenda</a></li>
+        <li><a href="/prestador/orcamento.html">Orçamentos</a></li>
+        <li><a href="/prestador/os.html">Ordem de serviço</a></li>
+        <li><a href="/prestador/educacao.html">Espaço Educação MEI</a></li>        
         <li><a href="/index.html">Sair</a></li>
       </ul>
 
@@ -33,29 +36,55 @@
           style="max-width: 100px;"></a>          <br>
           <h5 class="grey-text text-dark-2">Área do Prestador</h5>
           </li>
-        <li><a href="#">Perfil</a></li>
-        <li><a href="#">Chamadas</a></li>
-        <li><a href="#">Agenda</a></li>
-        <li><a href="#">Orçamentos</a></li>
-        <li><a href="#">Ordem de serviço</a></li>
-        <li><a href="educacao.htm">Espaço Educação MEI</a></li>        
+        <li><a href="/prestador/perfil.html">Perfil</a></li>
+        <li><a href="/prestador/index.html">Chamadas</a></li>
+        <li><a href="/prestador/agendaPrestador.html">Agenda</a></li>
+        <li><a href="/prestador/orcamento.html">Orçamentos</a></li>
+        <li><a href="/prestador/os.html">Ordem de serviço</a></li>
+        <li><a href="/prestador/educacao.html">Espaço Educação MEI</a></li>        
         <li><a href="/index.html">Sair</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
-
-  <br><br><br>
-
-  <div class="row">
-    <h5 class="center text-lighten-2">Faça seu orçamento!</h5>
-  </div>
-  <form action="#">
-    <p class="range-field">
-      <input type="range" id="test5" min="0" max="100" />
-    </p>
-  </form>
+ 
+  <div class="container">
+    <div class="bread">
+    <a href="/prestador/">Prestador</a> > <strong>Orçamentos</strong>
+    </div>
+    <div class="row">
+      <h5 class="center text-lighten-2">Crie o orçamento!</h5>
+      <br>
+      <form class="login100-form validate-form">
+        <div class="form-group"> 
+          <label class="form-control-label" for="budget-title">Título do serviço</label> 
+          <input type="text" id="budget-title" placeholder="Titulo do serviço" class="form-control">
+        </div>
+        <div class="form-group"> 
+          <label class="form-control-label" for="budget-id-call">ID da chamada</label> 
+          <input type="text" id="budget-id-call" placeholder="ID da chamada" class="form-control" list="id-call">
+          <datalist id="id-call">
+            <option value="#id-202108 (Maria)">
+            <option value="#id-202107 (João)">
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="budget-description">Descrição</label>
+          <textarea id="budget-description" class="materialize-textarea" placeholder="Descrição"></textarea>
+        </div>
+        <p class="form-group">
+          <label for="budget-price-value">Preço</label>
+          <input class="form-group" type="number" id="budget-price-value" min="0" max="5000" placeholder="Valor em reais"/>
+        </p>
+        <br>
+        <div class="row center">
+          <a id="login-user-button register-user-button" class="btn-large waves-effect waves-light">
+            Gerar orçamento
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>  
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="/js/materialize.js"></script>

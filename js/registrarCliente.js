@@ -1,4 +1,4 @@
-var button_send = document.querySelector("#login-user-button");
+var button_send = document.querySelector("#register-user-button");
 
 
 function getInput(id){

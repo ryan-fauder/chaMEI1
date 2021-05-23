@@ -14,51 +14,70 @@
 </head>
 
 <body>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container"></div>
-    <br><br>
-    <h1 class="header center orange-text"></h1>
-    <div class="col s12 m8 offset-m2 l6 offset-l3 center">
-      <img class="responsive-img" src="/images/CHAMEI v3.svg" alt="" style="max-width: 200px;">
+  <nav class="teal darken-2" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="/images/CHAMEI v3.svg" alt=""
+          style="max-width: 100px;"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Busca</a></li>
+        <li><a href="#">Angedamentos</a></li>
+        <li><a href="#">Orçamentos</a></li>
+        <li><a href="#">Ordem de serviço</a></li>
+        <li><a href="../index.html">Sair</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li class="center"><a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="/images/CHAMEI v3.svg" alt=""
+          style="max-width: 100px;"></a>          <br>
+          <h5 class="grey-text text-dark-2">Área do Cliente</h5>
+          </li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Busca</a></li>
+        <li><a href="#">Angedamentos</a></li>
+        <li><a href="#">Orçamentos</a></li>
+        <li><a href="#">Ordem de serviço</a></li>
+        <li><a href="../index.html">Sair</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-    <div class="row center">
-      <p class="header col s12 light"><strong>MEI</strong>, divulgue seu serviço! <br><strong>Cidadão</strong>, encontre de forma fácil seu prestador!</p>
-      <p class="header col s12 light"></p>
-    </div>
+  </nav>
 
-    <div class="row">
-      <h5 class="center text-lighten-2">Busque o prestador de serviço</h5>
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="autocomplete" list="opcoes">
-            <label for="email">Qual profissional está você precisa?</label>
+  <br><br><br>
+  <div class="row">
+    <h5 class="center text-lighten-2">Busque o prestador de serviço</h5>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="autocomplete" list="opcoes">
+          <label for="email">Qual profissional está você precisa?</label>
 
-            <datalist id="opcoes">
-              <option value="Pedreiro">
-              <option value="Encanador">
-              <option value="Cuidador de idosos">
-              <option value="Costureira">
-            </datalist>
+          <datalist id="opcoes">
+            <option value="Pedreiro">
+            <option value="Encanador">
+            <option value="Cuidador de idosos">
+            <option value="Costureira">
+            <option value="Eletricista">
+          </datalist>
 
-          </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
+  </div>
 
 
-    <div class="row center">
-      <a href="/resultado.html" id="download-button" class="btn-large waves-effect waves-light">Buscar</a>
+  <div class="row center">
+    <a href="/resultado.html" id="download-button" class="btn-large waves-effect waves-light">Buscar</a>
 
 
-      <br><br>
-      <h5>Destaques</h5>
-    </div>
-    <div class="col s12 m8 offset-m2 l6 offset-l3 center">
-      <a class="btn-large waves-light grey"><i class="material-icons">account_balance</i> Pedreiro</a>
+    <br><br>
+    <h5>Destaques</h5>
+  </div>
+  <div class="col s12 m8 offset-m2 l6 offset-l3 center">
+    <a class="btn-large waves-light grey"><i class="material-icons">account_balance</i> Pedreiro</a>
 
-      <a class="btn-large waves-light grey"><i class="material-icons">build</i> Mecânico</a>
-    </div>
+    <a class="btn-large waves-light grey"><i class="material-icons">build</i> Mecânico</a>
+  </div>
 
 
 

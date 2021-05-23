@@ -15,4 +15,8 @@ button_send.addEventListener("click", function(){
   }
   var current_email = getInput("#email-user");
   var current_pass = getInput("#password-user");
+
+  users.foreach(function(email, pass){
+    console.log(email, pass);
+  })
 });
